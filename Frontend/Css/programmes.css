@@ -1,0 +1,450 @@
+/* <!-- Website developed by Son Developer, © 2025 --> */
+body {
+  margin: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+ /* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 15px;
+    margin: 0;
+    animation: slideDown 1s ease-out;
+}
+
+ @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to   { transform: translateY(0); opacity: 1; }
+    }
+
+.Logo {
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+
+.buttons {
+    object-fit: contain;
+    margin-left: 50%;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    color: gold;
+}
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.buttons button {
+    background-color: #005b96;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttons button:hover {
+    background-color: #003f6b;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+/*the css for the images and programmes of the church*/
+.programme-container {
+    position: relative;
+    width: 100%;
+    height: 90vh; 
+    overflow: hidden;  
+    top: 50px;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.dot.active {
+    background-color: #ffffff;
+}
+
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.programme-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay h2, h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+
+.programme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    gap: 20px;
+}
+
+.programme-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    border: 1px solid rgba(255,255,255,0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.6s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+
+/*The css fo the calendar of events*/
+.calendar-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.calendar-header h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.calendar-header h4 {
+    font-size: 16px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.event-card {
+    background-color: #ffffff;
+    border-left: 6px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+    background-color: #eaf2f8;
+}
+
+.event-date {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2980b9;
+    margin-bottom: 8px;
+}
+
+.event-desc {
+    font-size: 15px;
+    color: #34495e;
+    line-height: 1.5;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+
+.welcome {
+    text-align: center;
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+
+
+
+/*The css for the whole footer section*/
+footer {
+    background: linear-gradient(to right, #2c3e50, #4a6491);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: auto;
+}
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+}
+        
+.bottomcontacts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f9f9f9;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+        
+.bottomcontacts p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+  /* <!-- Website developed by Son Developer, © 2025 --> */      
+.headbuttons {
+    display: flex;
+    flex-direction: column;
+}
+        
+.headbuttons a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+ /* <!-- Website developed by Son Developer, © 2025 --> */      
+.headbuttons a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+  
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.follow {
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+        
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+       
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+       
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+        
+.bottomfooter {
+    flex: 1;
+}
+        
+.bottomfooter p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
+.footer-image {
+    max-height: 80px;
+    margin-left: 1rem;
+}
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+    @media (max-width: 768px) {
+        .buttons {
+           display: none;
+           flex-direction: column;
+           position: absolute;
+           top: 70px;
+           right: 20px;
+           background-color: teal;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+           padding: 10px;
+           z-index: 1000;
+           gap: 6px;
+        }
+
+        .button:hover {
+           color: blue;
+        } 
+
+        .buttons.show {
+           display: flex;
+        }
+
+
+        .hamburger {
+            display: block;
+            margin-left: auto;
+            margin-right: 40px;
+        }
+
+        .overlay h2,h1 {
+            margin-top: 0;
+            font-size: 10px;
+            gap: 5px;
+        }
+        .programme-container {
+            position: relative;
+            top: 60px;
+            z-index: 70;
+        }/* <!-- Website developed by Son Developer, © 2025 --> */
+
+       .programme-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .programme-item {
+            padding: 10px;
+            font-size: 1em;
+            line-height: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .event-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-section {
+            min-width: 100%;
+            text-align: center;
+        }/* <!-- Website developed by Son Developer, © 2025 --> */
+            
+        .bottom-row {
+            flex-direction: column;
+            text-align: center;
+        }
+            
+        .footer-image {
+            margin: 1rem 0 0 0;
+        }
+            
+        .headbuttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .social-icons {
+            justify-content: center;
+            flex-direction: row; 
+            text-align: center;
+        }  /* <!-- Website developed by Son Developer, © 2025 --> */    
+    }
+    /* <!-- Website developed by Son Developer, © 2025 --> */    

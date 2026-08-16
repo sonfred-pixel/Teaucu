@@ -1,0 +1,384 @@
+/* <!-- Website developed by Son Developer, © 2025 --> */
+body {
+  margin: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ /* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 15px;
+    margin: 0;
+    animation: slideDown 1s ease-out;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+
+ @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to   { transform: translateY(0); opacity: 1; }
+    }
+
+.Logo {
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+}
+
+.buttons {
+    object-fit: contain;
+    margin-left: 50%;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    color: gold;
+}
+
+
+.buttons button {
+    background-color: #005b96;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttons button:hover {
+    background-color: #003f6b;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+/*The CSS FOR THE CONTENT*/
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.giving-container {
+    position: relative; 
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    height: 70%;
+}
+
+.giving-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay .p1 {
+    font-size: x-large;
+    text-align: center;
+    animation: slideDown 1s ease-out;
+}
+.overlay h1 {
+    animation: slideDown 1s ease-out;
+    margin-top: -200px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0px;
+    
+}
+.overlay h5 {
+    animation: slideDown 1s ease-out;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.overlay img{
+    animation: slideDown 1s ease-out;
+    width: 400px;
+    height: 250px;
+    margin-left: 450px;
+}
+
+/*The css for the three divs*/
+
+.section-title {
+    text-align: center;
+    padding: 40px 20px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.contribution-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.column {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.column h3 {
+    color: #2980b9;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+
+
+/*The css for the whole footer section*/
+footer {
+    background: linear-gradient(to right, #2c3e50, #4a6491);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: auto;
+}
+        
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+}
+        
+.bottomcontacts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f9f9f9;
+}
+        
+.bottomcontacts p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+        
+.headbuttons {
+    display: flex;
+    flex-direction: column;
+}
+        
+.headbuttons a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+       
+.headbuttons a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+  
+
+.follow {
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+        
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}/* <!-- Website developed by Son Developer, © 2025 --> */
+       
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+       
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bottomfooter {
+    flex: 1;
+}
+        
+.bottomfooter p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
+.footer-image {
+    max-height: 80px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+        .buttons {
+           display: none;
+           flex-direction: column;
+           position: absolute;
+           top: 70px;
+           right: 20px;
+           background-color: teal;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+           padding: 10px;
+           z-index: 1000;
+           gap: 6px;
+        }
+
+        .button:hover {
+           color: blue;
+        } 
+
+        .buttons.show {
+           display: flex;
+        }
+
+        /* <!-- Website developed by Son Developer, © 2025 --> */
+        .hamburger {
+            display: block;
+            margin-left: auto;
+            margin-right: 40px;
+        }
+
+        .giving-container {
+            position: relative; 
+            margin-top: 10%;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .giving-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay .p1 {
+            font-size: small;
+            text-align: center;
+        }
+        .overlay h1 {
+            margin-top: -2px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 2px;
+
+        }/* <!-- Website developed by Son Developer, © 2025 --> */
+        .overlay h5 {
+            margin-top: -2px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 2px;
+        }
+        .overlay img{
+            width: 200px;
+            height: 100px;
+            margin-left: 130px;
+        }
+
+        .contribution-row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section {
+            min-width: 100%;
+            text-align: center;
+        }
+            
+        .bottom-row {
+            flex-direction: column;
+            text-align: center;
+        }
+            
+        .footer-image {
+            margin: 1rem 0 0 0;
+        }
+            
+        .headbuttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .social-icons {
+            justify-content: center;
+            flex-direction: row; 
+            text-align: center;
+        }      
+    }
+    /* <!-- Website developed by Son Developer, © 2025 --> */
