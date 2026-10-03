@@ -1,26 +1,12 @@
-/* ============================================
-   TEAUCU WEBSITE STYLESHEET
-   Developed by Son Developer, © 2025
-   ============================================ */
-
-/* ============================================
-   1. GLOBAL RESET
-   ============================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* <!-- Website developed by Son Developer, © 2025 --> */
+body {
+  margin: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* ============================================
-   2. HEADER
-   ============================================ */
+ /* Header */
 header {
     position: fixed;
     top: 0;
@@ -29,18 +15,20 @@ header {
     width: 100%;
     background-color: green;
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
-    padding: 0 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     z-index: 1000;
+    padding: 15px;
+    margin: 0;
     animation: slideDown 1s ease-out;
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-100%); opacity: 0; }
-    to   { transform: translateY(0);     opacity: 1; }
-}
+ @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to   { transform: translateY(0); opacity: 1; }
+    }
 
 .Logo {
     width: auto;
@@ -49,11 +37,21 @@ header {
 }
 
 .buttons {
-    margin-left: auto;
+    object-fit: contain;
+    margin-left: 40%;
+    cursor: pointer;
     display: flex;
     gap: 10px;
-    cursor: pointer;
 }
+
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    color: gold;
+}
+
 
 .buttons button {
     background-color: #005b96;
@@ -63,7 +61,6 @@ header {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s;
 }
 
 .buttons button:hover {
@@ -75,16 +72,56 @@ header {
     font-size: 28px;
     cursor: pointer;
     user-select: none;
-    color: white;
-    margin-left: auto;
 }
 
-/* ============================================
-   3. CAROUSEL / HERO
-   ============================================ */
+
+
+/*The next images css*/
+.title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.title p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.JOINTEUCU {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 80vh;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #e4e2e9;
+    z-index: 20;
+    background: rgba(10, 5, 26, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.JOINTEUCU:hover {
+    background-color: #0fa352;
+    cursor: pointer;
+}
+
 .carousel {
     position: relative;
-    width: 100%;
+    top: -70px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -93,61 +130,13 @@ header {
 }
 
 .carousel-inner {
-    margin-top: 100px;
+    margin-top: 190px;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
     position: relative;
     animation: slideDown 1s ease-out;
-}
-
-.title {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #fff;
-    z-index: 20;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 10px 20px;
-    border-radius: 8px;
-    width: max-content;
-    max-width: 90%;
-}
-
-.title h2 {
-    font-size: 2rem;
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 4px #000;
-}
-
-.title p {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 3px #000;
-}
-
-.JOINTEUCU {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #e4e2e9;
-    z-index: 20;
-    background: rgba(10, 5, 26, 0.6);
-    padding: 12px 40px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.JOINTEUCU:hover {
-    background-color: #0fa352;
-    cursor: pointer;
 }
 
 .slides {
@@ -160,16 +149,16 @@ header {
     min-width: 100%;
     height: 100%;
 }
-
+/* <!-- Website developed by Son Developer, © 2025 --> */
 .slide img {
     width: 100%;
-    height: 100%;
+    height: 96%;
     object-fit: cover;
 }
 
 .dots {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -185,7 +174,7 @@ header {
     opacity: 0.5;
     cursor: pointer;
     transition: transform 0.3s, opacity 0.3s;
-}
+}/* <!-- Website developed by Son Developer, © 2025 --> */
 
 .dot.active {
     opacity: 1;
@@ -199,30 +188,31 @@ header {
     transform: translateY(-50%);
     font-size: 2.5rem;
     color: #fff;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0,0,0,0.3);
     padding: 10px 15px;
     cursor: pointer;
     user-select: none;
     z-index: 10;
 }
 
-.arrow.left  { left: 20px; }
+.arrow.left { left: 20px; }
 .arrow.right { right: 20px; }
 
-/* ============================================
-   4. MAIN CONTENT (About / Vision / Mission)
-   ============================================ */
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+/*The css for the main-contnet of the cu details*/
 .main-content {
-    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 2rem;
     background-color: #4b0f0f;
+    margin-top: -3vh;
 }
-
+        
 .title2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -231,7 +221,7 @@ header {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     color: #fff;
 }
-
+        
 .subtitle {
     font-size: 1.8rem;
     margin-bottom: 2.5rem;
@@ -239,14 +229,14 @@ header {
     letter-spacing: 2px;
     color: #e67e22;
 }
-
+        
 .divider {
     width: 100px;
     height: 4px;
     background: #e67e22;
     margin: 1.5rem auto;
 }
-
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .description {
     max-width: 800px;
     font-size: 1.3rem;
@@ -255,9 +245,8 @@ header {
     background: rgba(197, 191, 191, 0.6);
     padding: 2rem;
     border-radius: 10px;
-    color: #fff;
 }
-
+        
 .values {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -266,7 +255,7 @@ header {
     max-width: 1200px;
     margin-top: 2rem;
 }
-
+        
 .value-card {
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem;
@@ -276,65 +265,61 @@ header {
     transition: transform 0.3s ease;
     border: 1px solid #e67e22;
 }
-
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .value-card:hover {
     transform: translateY(-5px);
 }
-
+        
 .value-icon {
     font-size: 2.5rem;
     color: #e67e22;
     margin-bottom: 1rem;
 }
-
+        
 .value-title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #e67e22;
 }
-
+        
 .value-content {
     color: #ddd;
     font-size: 1.1rem;
 }
-
+        
 .motto-section {
     margin-top: 3rem;
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem;
     border-radius: 10px;
     border-left: 5px solid #e67e22;
-    max-width: 1000px;
 }
-
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .motto {
     font-size: 2.2rem;
     font-style: italic;
     color: #e67e22;
 }
-
+        
 .verse {
     font-size: 1.2rem;
     margin-top: 1rem;
     color: #ddd;
 }
 
-/* ============================================
-   5. MEET THE EXECUTIVE  (4-COLUMN GRID)
-   ============================================ */
+
 .container {
-    width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 20px;
     background-color: rgb(196, 191, 191);
 }
-
+        
 .header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
-
+        
 .header h1 {
     font-size: 2.2rem;
     color: #2c3e50;
@@ -342,7 +327,7 @@ header {
     position: relative;
     display: inline-block;
 }
-
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .header h1::after {
     content: '';
     position: absolute;
@@ -353,239 +338,254 @@ header {
     height: 3px;
     background: #e67e22;
 }
-
+        
 .header p {
     font-size: 1rem;
-    color: #4a4a4a;
+    color: #7f8c8d;
     max-width: 800px;
-    margin: 20px auto 0;
-    line-height: 1.6;
+    margin: 15px auto 0;
 }
-
-/* --- 4 Column Grid for all executive rows --- */
+        
 .role-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 25px;
-    margin-bottom: 50px;
-    align-items: stretch;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
-
+        
 .role-title {
-    grid-column: 1 / -1;   /* Span full width */
     text-align: center;
-    font-size: 1.6rem;
-    color: #003366;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
     border-bottom: 2px solid #e67e22;
+    width: 100%;
 }
-
-/* --- Card --- */
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .executive-card {
-    background: #fff;
-    border-radius: 15px;
+    background: white;
+    border-radius: 10px;
     overflow: hidden;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-
+       
 .executive-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
-
+        
 .executive-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
 }
-
+      
 .executive-img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 4px solid #004aad;
-    background-color: #e0e0e0;
+    transition: transform 0.4s ease;
 }
-
-.executive-name {
-    font-size: 1.15rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 6px;
+        
+.executive-card:hover .executive-img img {
+    transform: scale(1.05);
 }
-
-.executive-position {
-    color: #004aad;
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
-
-.executive-info p:last-child {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.4;
-}
-
-/* ============================================
-   6. COUNTERS
-   ============================================ */
-.counter-container {
-    width: 100%;
+      
+.executive-info {
+    padding: 15px;
     text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 50px 20px;
+    flex-grow: 1;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 60px;
-    background-color: #f7f7f7;
+}
+       
+.executive-name {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+       
+.executive-position {
+    font-size: 0.9rem;
+    color: #e67e22;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+        
+.executive-info p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
+
+.chaplain-card {
+    border-top: 3px solid #e67e22;
+}
+        
+.chairperson-card {
+    border-top: 3px solid #3498db;
+}
+        
+.secretary-card {
+    border-top: 3px solid #2ecc71;
+}
+        
+.treasurer-card {
+    border-top: 3px solid #9b59b6;
 }
 
-.counter-item {
-    margin: 20px 0;
-}
 
-.counter-title {
-    font-size: 1.5rem;
-    color: #FF9800;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
 
-.counter-number {
-    color: #136207;
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-@keyframes count-up {
-    0%   { transform: scale(0); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
-.animated-counter {
-    animation: count-up 2s ease-in-out forwards;
-}
-
-/* ============================================
-   7. PARTNERS SECTION
-   ============================================ */
+/*the css for the our patners section*/
+/* <!-- Website developed by Son Developer, © 2025 --> */
+/* Partners Section */
 .partners-section {
-    width: 100%;
     background-color: #0fa352;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .partners-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-    color: #fff;
-    letter-spacing: 2px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .partners-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .partner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 180px;
+    max-width: 150px;
 }
 
 .partner img {
-    width: 120px;
+    width: 100px;
     height: auto;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    background: #fff;
-    padding: 8px;
+    margin-bottom: 10px;
 }
 
 .partner p {
-    font-size: 0.95rem;
-    color: #fff;
-    font-weight: 600;
+    font-size: 14px;
+    color: #555;
 }
 
-/* ============================================
-   8. FOOTER
-   ============================================ */
+
+.counter-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+/* <!-- Website developed by Son Developer, © 2025 --> */
+.counter-item {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 40px 0;  
+}
+
+.counter-title {
+    font-size: 24px;
+    color: #FF9800;
+    margin-bottom: 25px; 
+}
+
+.counter-number {
+    color: #136207;
+    font-size: 50px;
+}
+
+/* Animation for the counter */
+    @keyframes count-up {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .animated-counter {
+      animation: count-up 2s ease-in-out forwards;
+    }
+
+/* <!-- Website developed by Son Developer, © 2025 --> */
+/*The css for the whole footer section*/
 footer {
-    width: 100%;
     background: linear-gradient(to right, #2c3e50, #4a6491);
     color: white;
-    padding: 3rem 2rem 1rem;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+    position: relative;
+    width: auto;
 }
-
+        
 .footer-section {
     flex: 1;
     min-width: 250px;
     padding: 1rem;
 }
-
+        
 .bottomcontacts h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #f9f9f9;
 }
-
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .bottomcontacts p {
     margin: 0.5rem 0;
     display: flex;
     align-items: center;
 }
-
+        
 .headbuttons {
     display: flex;
     flex-direction: column;
 }
-
+        
 .headbuttons a {
     color: white;
     text-decoration: none;
-    margin: 0.3rem 0;
+    margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-
+       
 .headbuttons a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+  
 
 .follow {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}/* <!-- Website developed by Son Developer, © 2025 --> */
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-
+        
 .social-icons a {
     display: flex;
     justify-content: center;
@@ -598,165 +598,106 @@ footer {
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
-
+       
 .social-icons a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
 }
-
+       
 .bottom-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    margin-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
 .bottomfooter {
     flex: 1;
 }
-
+        
 .bottomfooter p {
     margin: 0;
     font-size: 0.9rem;
     opacity: 0.9;
-    line-height: 1.5;
 }
-
+        
 .footer-image {
     max-height: 80px;
     margin-left: 1rem;
 }
+        
 
-/* ============================================
-   9. RESPONSIVE BREAKPOINTS
-   ============================================ */
+    @media (max-width: 768px) {
+        .buttons {
+           display: none;
+           flex-direction: column;
+           position: absolute;
+           top: 70px;
+           right: 20px;
+           background-color: teal;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+           padding: 10px;
+           z-index: 1000;
+           gap: 6px;
+        }
 
-/* ---- Tablet (≤ 992px) ---- */
-@media (max-width: 992px) {
-    .role-row {
-        grid-template-columns: repeat(2, 1fr);
+        .button:hover {
+           color: blue;
+        } 
+
+        .buttons.show {
+           display: flex;
+        }
+        /* <!-- Website developed by Son Developer, © 2025 --> */
+
+        .hamburger {
+            display: block;
+            margin-left: auto;
+            margin-right: 40px;
+        }
+
+        .footer-section {
+            min-width: 100%;
+            text-align: center;
+        }
+            
+        .bottom-row {
+            flex-direction: column;
+            text-align: center;
+        }
+            
+        .footer-image {
+            margin: 1rem 0 0 0;
+        }
+            
+        .headbuttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        /* <!-- Website developed by Son Developer, © 2025 --> */
+        .social-icons {
+            justify-content: center;
+            flex-direction: row; 
+            text-align: center;
+        }      
     }
-}
-
-/* ---- Mobile (≤ 768px) ---- */
-@media (max-width: 768px) {
-    header {
-        padding: 0 15px;
-    }
-
-    .Logo {
-        height: 60px;
-    }
-
-    .buttons {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 15px;
-        background-color: teal;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 12px;
-        z-index: 1000;
-        gap: 8px;
-        border-radius: 6px;
-    }
-
-    .buttons.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .carousel-inner {
-        margin-top: 70px;
-    }
-
-    .title {
-        top: 10%;
-    }
-
-    .footer-section {
-        min-width: 100%;
-        text-align: center;
-    }
-
-    .bottom-row {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-image {
-        margin: 1rem 0 0 0;
-    }
-
-    .headbuttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .counter-container {
-        gap: 30px;
-    }
-}
-
-/* ---- Small Mobile (≤ 576px) ---- */
-@media (max-width: 576px) {
-    .role-row {
-        grid-template-columns: 1fr;
-    }
-
-    .container {
-        padding: 40px 15px;
-    }
-
-    .executive-img img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-/* ---- Extra Small (≤ 480px) ---- */
 @media (max-width: 480px) {
-    .title h2 {
-        font-size: 6vw;
-    }
-
-    .title p {
-        font-size: 4vw;
-    }
-
-    .arrow {
-        font-size: 2rem;
-        padding: 6px 10px;
-    }
-
-    .dot {
-        width: 14px;
-        height: 14px;
-    }
-
-    .motto {
-        font-size: 1.5rem;
-    }
-
-    .description {
-        font-size: 1rem;
-        padding: 1.2rem;
-    }
-
-    .counter-number {
-        font-size: 2.2rem;
-    }
+  .title h2 {
+    font-size: 6vw;
+  }/* <!-- Website developed by Son Developer, © 2025 --> */
+  .title p {
+    font-size: 4vw;
+  }
+  .arrow {
+    font-size: 3rem;
+  }
+  .dot {
+    width: 18px;
+    height: 18px;
+  }/* <!-- Website developed by Son Developer, © 2025 --> */
 }
+/* <!-- Website developed by Son Developer, © 2025 --> */
