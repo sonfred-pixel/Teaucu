@@ -505,6 +505,26 @@ footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.join-last {
+    position: absolute;
+    width: auto;
+    max-width: 350px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #e4e2e9;
+    background: rgba(10, 5, 26, 0.6);
+    padding: 12px 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.join-last:hover {
+    background-color: #0fa352;
+}
+
 .follow {
     display: flex;
     justify-content: center;
