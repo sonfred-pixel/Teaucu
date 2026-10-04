@@ -308,140 +308,98 @@ header {
 }
 
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(196, 191, 191);
-}
-        
-.header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-        
-.header h1 {
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-}
- /* <!-- Website developed by Son Developer, © 2025 --> */       
-.header h1::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: #e67e22;
-}
-        
-.header p {
-    font-size: 1rem;
-    color: #7f8c8d;
-    max-width: 800px;
-    margin: 15px auto 0;
-}
-        
-.role-row {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-        
-.role-title {
-    text-align: center;
-    font-size: 1.4rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #e67e22;
-    width: 100%;
-}
- /* <!-- Website developed by Son Developer, © 2025 --> */       
-.executive-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-}
-       
-.executive-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-        
-.executive-img {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-}
-      
-.executive-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-        
-.executive-card:hover .executive-img img {
-    transform: scale(1.05);
-}
-      
-.executive-info {
-    padding: 15px;
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-       
-.executive-name {
-    font-size: 1.2rem;
-    color: #2c3e50;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-       
-.executive-position {
-    font-size: 0.9rem;
-    color: #e67e22;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-        
-.executive-info p {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
-    color: #7f8c8d;
-}
- /* <!-- Website developed by Son Developer, © 2025 --> */       
 
-.chaplain-card {
-    border-top: 3px solid #e67e22;
-}
         
-.chairperson-card {
-    border-top: 3px solid #3498db;
+ /* <!-- Website developed by Son Developer, © 2025 --> */       
+/* Website developed by Son Developer, © 2025 */
+ 
+.executives-container{
+width:90%;
+max-width:1400px;
+margin:auto;
+padding:60px 0;
 }
-        
-.secretary-card {
-    border-top: 3px solid #2ecc71;
+ 
+.header{
+text-align:center;
+margin-bottom:50px;
 }
-        
-.treasurer-card {
-    border-top: 3px solid #9b59b6;
+ 
+.header h1{
+font-size:40px;
+color:#14213d;
+margin-bottom:15px;
+}
+ 
+.header p{
+max-width:700px;
+margin:auto;
+color:#666;
+line-height:1.7;
+}
+ 
+/* Grid Layout */
+.executives-grid{
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:30px;
+}
+ 
+/* Card Design */
+.executive-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.4s ease;
+}
+ 
+.executive-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+ 
+.executive-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+ 
+.executive-card h3{
+margin:20px 10px 10px;
+color:#14213d;
+font-size:22px;
+}
+ 
+.position{
+color:#0d6efd;
+font-weight:700;
+margin-bottom:20px;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+ 
+/* Tablet */
+@media(max-width:992px){
+.executives-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+ 
+/* Mobile */
+@media(max-width:576px){
+.executives-grid{
+grid-template-columns:1fr;
+}
+ 
+.header h1{
+font-size:30px;
+}
+ 
+.executive-card img{
+height:280px;
+}
 }
 
 
